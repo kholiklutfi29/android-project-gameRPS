@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computerChoiceText"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/computerImageView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:src="@drawable/question"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playerChoiceText"
+        android:layout_gravity="center_horizontal"/>
+
+    <include layout="@layout/rps"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultText"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:src="@drawable/question"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+
+</LinearLayout>
